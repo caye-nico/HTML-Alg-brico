@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-3">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Ângulos</title>
+    <style>
+        body {
+            background-color: rgb(192, 103, 103);
+            color: rgb(0, 0, 0); /*Comentário em CSS */
+            font: normal 15pt Arial;
+        }
+        h1 {
+            color: rgb(0, 0, 0);
+        }
+        p {
+            font: normal 20pt Times;
+        }
+    </style>
+</head>
+<body>
+    <h1> Olá! </h1> <!--Commentario -->
+    <p> Obrigado por utilizar nossa programação. 
+        Para calcular novamente, tecle F5
+    </p>
+    <script>
+        var horas = Number (window.prompt ('Digite as horas')) // Quantas horas são
+        var minutos = Number (window.prompt ('Digite os minutos')) //Quantas minutos são
+        var segundos = Number (window.prompt ('Digite os Segundos')) // Quantas segundos são
+        var angulo_minutos = 6*minutos + segundos/10 // number.parseInt(n) ou reais number.parseFloat(n)
+        var angulo_horas = 30*horas + minutos/2
+        var angulo_resultante = angulo_horas - angulo_minutos 
+        window.alert ('O Ângulo resultante é ' + angulo_resultante )
+        // number + numero = adição
+        // string + string = concatenação
+        // `estou aprendendo ${s}`
+    </script>
+</body>
+</html>
